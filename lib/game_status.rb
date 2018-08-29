@@ -48,7 +48,7 @@ end
 def draw?(board)
   if full?(board) == false
     false
-  elsif won?(board) == []
+  elsif won?(board) == WIN_COMBINATIONS[]
       false
     else
       true
