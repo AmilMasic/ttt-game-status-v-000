@@ -36,12 +36,11 @@ else
 end
 
 def full?(board)
-  board.any? do |positions|
+  board.all do |positions|
     if positions != "X" || "O"
-       false
-     else
        true
+     else
+       false
     end
   end
 end
-
