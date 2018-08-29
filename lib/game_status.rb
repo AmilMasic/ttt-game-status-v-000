@@ -35,12 +35,17 @@ else
   return false
 end
 
+# def full?(board)
+#   board.any? do |positions|
+#     if positions != "X" || "O"
+#        false
+#      else
+#        true
+#     end
+#   end
+# end
 def full?(board)
-  board.any? do |positions|
-    if positions != "X" || "O"
-       false
-     else
-       true
-    end
+  board.any? do |position|
+    position - board == []
   end
 end
