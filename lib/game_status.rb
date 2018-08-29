@@ -40,7 +40,7 @@ def full?(board)
   if  positions == "X" || "O"
     return true
   else
-    false
+    return false
   end
   end
 end
